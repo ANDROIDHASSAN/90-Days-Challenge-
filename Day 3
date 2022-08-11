@@ -1,0 +1,93 @@
+Today I have Learned about Space Complexity.
+
+What is space complexity?
+
+Total amount of memory space used by an algorithm/program including the space of input values for execution.
+
+Space Complexity = Auxilary space + Space use by input values 
+
+In space complexity A good Algorithm keeps space complexity as low as possible.
+
+Examples:
+
+int sum(int x, int y, int z)
+{
+int t = x+y+z;
+return t;
+}
+
+Time complexity is order of 1 o(1).
+
+
+5 variables - x,y,z,t,1
+
+we need two bytes for all varibales so:
+2+2+2+2+2=10;
+
+and 
+
+if their is constant variable there is order of 1 o(1)
+
+If there is constant then the space and time complexity is big O of 1 o(1) . 
+
+Example 2:
+
+int sum(int a[], int n)
+{
+int r=0;
+for(int i = 0; i<n;++i)
+{
+r+=a[i];
+}
+return r;
+}
+
+In this sum our variables are 
+1.a[]=2n
+2.n=2
+3.r=2
+4.i=2
+5.return r=2
+
+here 2+2+2+2= 8
+
+means 
+
+8+2n = means our space complexity will be big o of n o(n)
+
+when we use array in that case our constant space complexity is not required
+
+What is the concept here ?
+
+Just chek the variables and see the space complexuty for that.
+
+Example 3:
+
+void matrixAdd(int a[]),int b[], int c[],int n)
+{
+for(int i=0;i<n;++i)
+{
+c[i]=a[i]+b[j];
+}
+}
+
+i,n,c,a,b,j
+a[]
+b[]
+c[]
+i
+n
+
+6n+4
+
+total space complexity = o(n)
+
+the concept is simple if their is array then the value is big o of n O(n)  
+and if its constant then it's O(1).
+
+I have also  saw some more examples on geeks for geeks.
+
+I have learned this from the video of computer shastra space complexity.
+
+
+
